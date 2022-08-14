@@ -1,0 +1,30 @@
+<header>
+    <div class="Header-item" id="Header-item-1">
+        <p class="Header-item-pa">Actividad de tipo laboratorio</p>
+    </div>
+    <div class="Header-item" id="Header-item-2">
+        <a href="#" class="Header-item-pa">Tema y actividades <i class="fa-solid fa-share fa-flip-horizontal"></i></a>
+    </div>
+</header>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-top:1em;">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">Registro de <i>Laboratorio</i></button>
+    </li>
+</ul>
+<form [formGroup]="formLaboratorio">
+    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="row">
+            <div class="col-md-1">
+                <p class="Negritas">Subir Archivo</p>
+            </div>
+            <div class="col-md-3">
+                <input class="form-control" type="file" id="formFileMultiple" formControlName="File" (change)="onFileSelected($event)" multiple>
+            </div>
+            <div class="button-Guardar">
+                <button class="btn btn-success" (click)="saveFile()" [disabled]="formLaboratorio.invalid">Guardar</button>
+            </div>
+        </div>
+    </div>
+</form>

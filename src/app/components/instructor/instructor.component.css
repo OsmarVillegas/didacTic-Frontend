@@ -1,0 +1,113 @@
+header{
+    background-color: rgb(51, 179, 0);
+    text-align: left;
+}
+
+.Header-item{
+    display: inline-block;
+    height: 3.5em;
+}
+
+/*
+#Header-item-1{
+    
+}
+*/
+
+#Header-item-2{
+    float:right;
+}
+
+header div > a{
+    text-decoration: none;
+    right: 1.8em;
+    top: 1em;
+}
+
+header div > p{
+    left: 1em;
+    top: 0.3em;    
+}
+
+.Header-item-pa {
+    color: #fff;
+    display: inline;
+    width: 200px;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-align: left;
+    position: relative;
+}
+
+#Alerta{
+    text-align: center;
+    font-weight: 600;
+    height: 4em;
+    width: 100%;
+}
+
+#Alerta p{
+    position: relative;
+    top:0.2em;
+}
+
+.Menu-QUIZ{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#myTabContent{
+    margin-left: 1em; 
+    margin-right: 1em; 
+    margin-bottom: 1em;
+}
+
+#Alert{
+    font-weight: 600;
+}
+
+.Negritas{
+    font-weight: 700;
+    text-align: left;
+    align-items: center;
+    position: relative;
+    top: 0.2em;
+}
+
+#Text-Quiz{
+    display: block;
+    width: 100%;
+    height: 10em;
+    float:left;
+}
+
+#Text-Quiz-div{
+    text-align:left;
+}
+
+.button-Guardar{
+    text-align: right;
+    right: 3em;
+    position: relative;
+    margin: 1.2em;
+}
+
+.table{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
+}
+
+.button-agregar{
+    color: #fff;
+    display: block;
+    position: relative;
+    height: 1em;
+}

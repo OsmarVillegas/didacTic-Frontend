@@ -1,0 +1,51 @@
+header{
+    background-color: rgb(51, 179, 0);
+    text-align: left;
+}
+
+.Header-item{
+    display: inline-block;
+    height: 3.5em;
+}
+
+#Header-item-2{
+    float:right;
+}
+
+header div > a{
+    text-decoration: none;
+    right: 1.8em;
+    top: 1em;
+}
+
+header div > p{
+    left: 1em;
+    top: 0.3em;
+    font-size: 1.1em;
+}
+
+.Header-item-pa {
+    color: #fff;
+    display: inline;
+    width: 200px;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-align: left;
+    position: relative;
+}
+
+.button-Guardar{
+    text-align: left;
+    left: 0.1em;
+    position: relative;
+    margin: 1.2em;
+}
+
+.Negritas{
+    font-weight: 700;
+    text-align: left;
+    align-items: center;
+    position: relative;
+    left: 1em;
+    top: 0.2em;
+}

@@ -1,0 +1,134 @@
+<header>
+    <div class="Header-item" id="Header-item-1">
+        <p class="Header-item-pa">Nombre de la actividad: Actividad tipo QUIZ</p>
+    </div>
+    <div class="Header-item" id="Header-item-2">
+        <a href="#" class="Header-item-pa">Tema y actividades <i class="fa-solid fa-share fa-flip-horizontal"></i></a>
+    </div>
+</header>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-top:1em;">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">Registro de <i>QUIZ</i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">Lista</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Pregunta</th>
+                <th scope="col">Valor de la pregunta</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>¿Pregunta?</td>
+                <td>1 puntos</td>
+                <td><a href="#"><i class="fa-solid fa-pen"></i></a></td>
+                <td><button class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>¿Qué podria preguntar?</td>
+                <td>2 puntos</td>
+                <td><a href="#"><i class="fa-solid fa-pen"></i></a></td>
+                <td><button class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>¿Cuantos años tienes?</td>
+                <td>2 puntos</td>
+                <td><a href="#"><i class="fa-solid fa-pen"></i></a></td>
+                <td><button class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="button-Guardar">
+            <button class="btn btn-success">Guardar</button>
+          </div>
+    </div>
+    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="alert alert-danger" id="Alerta">
+            <div style="display:inline-block;">
+            ¡El quiz sólo puede tener un total de 100 puntos diferidos en las preguntas!
+            </div>
+            <!-- <div style="display:inline-block; text-align: left;">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            -->
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+                <p class="Negritas">Descripción</p>
+            </div>
+            <div class="col-md-10" id="Text-Quiz-div">
+                <textarea id="Text-Quiz" name="Preguntas"></textarea>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 1em;">
+            <div class="col-md-2">
+                <p class="Negritas">Tipo de preguntas</p>
+            </div>
+            <div class="col-md-4">
+            <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Opcion multiple</option>
+                <option value="2">Respuesta libre</option>
+            </select>
+            </div>
+            <div class="col-md-1">
+                <p class="Negritas">Nivel</p>
+            </div>
+            <div class="col-md-5">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">Facil</option>
+                    <option value="2">Medio</option>
+                    <option value="3">Dificil</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 1em;">
+            <div class="col-md-2">
+                <p class="Negritas">Ponderación restante para Quiz</p>
+            </div>
+            <div class="col-md-10">
+                <p class="Negritas">100</p>
+            </div>
+        </div>
+        <div class="row" style="align-items:center;">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Respuesta</th>
+                    <th scope="col">Ponderación</th>
+                    <th>
+                        <button type="button" class="btn btn-info" style="color: white;">Agregar respuesta</button>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><input type="text" name="Respuesta" style="width: 100%;"></td>
+                    <td><input type="text" name="Respuesta" style="width: 100%;"></td>
+                    <td><button class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button></td>
+
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

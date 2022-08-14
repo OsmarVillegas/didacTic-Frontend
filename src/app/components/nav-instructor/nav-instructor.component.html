@@ -1,0 +1,87 @@
+<div class="main-container d-flex collapse navbar-collapse">
+    <div class="sidebar" id="side_nav">
+        <div class="content">
+            <div class="header-box px-2 pt-3 pb-4">
+                <h1 class="fs-4" style="background-color: rgb(0, 168, 135);"><span class="text-white">Instructor</span>
+                </h1>
+                <button class="btn d-mb-none d-block close-btn px-1 py-0 text-white"><i
+                        class="fal fa-stream"></i></button>
+                <ul class="list-unstyled px-2">
+                    <img src="3../../../../../assets/pics/logo-didactic.png" width="180" height="180">
+                    <li class="" class="nav-item dropdown">
+                        <a href="/instructor" data-bs-toggle="collapse" href="#collapse-agregarTemas" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Agregar temas
+                        </a>
+
+                        <ul class="collapse" id="collapse-agregarTemas">
+                            <a class="dropdown-item" href="/instructor" class="link-menu">Agregar Actividad</a>
+
+                            <a class="dropdown-item" href="/instructor" class="link-menu">Agregar Juego</a>
+                            <a class="dropdown-item" href="/instructor pantalla quiz" class="link-menu">Agregar
+                                quiz</a>
+                            <a class="dropdown-item" href="/instructor laboratorio" class="link-menu">Agregar
+                                Laboratorio</a>
+                        </ul>
+
+                    </li>
+                    <li class="active"><a href="/instructor" data-bs-toggle="collapse" href="#collapse-Crear"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">Crear
+                            curso</a>
+                            <ul class="collapse" id="collapse-Crear">
+
+                            </ul>
+
+                        </li>
+                    <li class=""><a href="/instructor" cdata-bs-toggle="collapse" href="#collapse-InscribirAlumno" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">Inscribir alumno a
+                            curso</a>
+                        
+                            <ul class="collapse" id="collapse-InscribirAlumno">
+
+                            </ul>
+                        
+                        </li>
+                    <li class=""><a href="/instructor" cdata-bs-toggle="collapse" href="#collapse-SeguimientoAlumno" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">Seguimiento al
+                            alumno</a>
+                        
+                            <ul class="collapse" id="collapse-SeguimientoAlumno">
+
+                            </ul>
+                        
+                        </li>
+                    <li class=""><a href="/instructor" data-bs-toggle="collapse" href="#collapse-Agregar" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">Agregar
+                            comentarios a tema</a>
+                        
+                            <ul class="collapse" id="collapse-Agregar">
+
+                            </ul>
+                        
+                        </li>
+                    <li class=""><a href="/instructor" data-bs-toggle="collapse" href="#collapse-Validar" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">Validar
+                            solicitud</a>
+                        
+                            <ul class="collapse" id="collapse-Validar">
+
+                            </ul>
+
+                        </li>
+                </ul>
+                <hr class="h-color mx-3">
+            </div>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".sidebar ul li").on('click', function () {
+        $(".sidebar ul li.active").removeClass('active');
+        $(this).addClass('active');
+    })
+</script>
